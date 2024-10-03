@@ -1,6 +1,7 @@
 resource "aws_security_group" "allow_ssh_terraform" {
     name = var.sg_name # allow_ssh is already there in my account
     description = var.sg_description
+    
 # ingress ---> incoming traffic
 # egress ---> outgoing traffic
 # usually we allow everything in egress  ;; BLOCK ---> egress {  ; KEY VALUE ---> egress ={
