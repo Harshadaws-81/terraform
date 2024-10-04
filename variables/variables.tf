@@ -12,44 +12,44 @@ variable "ami_id" {
 }
 
 variable "instance_type" {
-    type = string
-    default = "t3.small"
+  type    = string
+  default = "t3.small"
 }
 
 variable "tags" {
-    type = map # optional to mention , because Terraform knows that TAGS is map
-    default = {
-        Name = "Terraform"
-        Project = "expense"
-        Component = "backend"
-        Environment = "DEV"
-        Terraform = "true" 
-    }
+  type = map(any) # optional to mention , because Terraform knows that TAGS is map
+  default = {
+    Name        = "Terraform"
+    Project     = "expense"
+    Component   = "backend"
+    Environment = "DEV"
+    Terraform   = "true"
+  }
 }
 
 variable "sg_name" {
-    default = "allow_sshh"
+  default = "allow_sshh"
 }
 
 variable "sg_description" {
-    default = "Allow port number 22 for SSH Access"
+  default = "Allow port number 22 for SSH Access"
 }
 
 variable "from_port" {
-    type = number
-    default = 22
+  type    = number
+  default = 22
 }
 
 variable "to_port" {
-    type = number
-    default = 22
+  type    = number
+  default = 22
 }
 
 variable "protocol" {
-    default = "tcp"
+  default = "tcp"
 }
 
 variable "ingress_cidr" {
-    type = list(string)
-    default = ["0.0.0.0/0"]
+  type    = list(string)
+  default = ["0.0.0.0/0"]
 }
