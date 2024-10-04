@@ -33,7 +33,7 @@ resource "aws_instance" "terraform" {
   }
 }
 
-# if the environment is prod create "t3.medium" otherwise create "t3.micro"
+# Requirement - if the environment is prod create "t3.medium" otherwise create "t3.micro"
 
 resource "aws_instance" "elasticsearch" {
   ami                    = data.aws_ami.ami_info.id
