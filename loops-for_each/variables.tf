@@ -1,5 +1,5 @@
 variable "instances" {
-  type = map(any)
+  type = map
   default = {
     mysql    = "t3.small"
     backend  = "t3.micro"
