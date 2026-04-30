@@ -34,3 +34,5 @@ resource "aws_instance" "terraform" {
     Name = var.instance_names[count.index]
   }
 }
+
+# 3 instances will be created from the listprovided.
