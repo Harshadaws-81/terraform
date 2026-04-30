@@ -28,7 +28,7 @@ variable "tags" {
 }
 
 variable "sg_name" {
-  default = "allow_sshh"
+  default = "allow_sshhh"
 }
 
 variable "sg_description" {

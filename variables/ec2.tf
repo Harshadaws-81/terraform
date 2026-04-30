@@ -4,7 +4,7 @@ resource "aws_security_group" "allow_ssh_terraform" {
 
   # ingress ---> incoming traffic
   # egress ---> outgoing traffic
-  # usually we allow everything in egress  ;; BLOCK ---> egress {  ; KEY VALUE ---> egress ={
+  # usually we allow everything in egress ;; BLOCK ---> egress {  ; KEY VALUE ---> egress ={
   egress {
     from_port        = 0
     to_port          = 0
