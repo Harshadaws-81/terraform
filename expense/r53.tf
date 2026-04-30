@@ -9,3 +9,4 @@ resource "aws_route53_record" "expense" {
   allow_overwrite = true
 }
 
+# This resource will create Route53 records for each EC2 instance created.

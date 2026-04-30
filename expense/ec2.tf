@@ -37,3 +37,5 @@ resource "aws_instance" "expense" {
     }
   )
 }
+
+# instances created from the list provided.
