@@ -3,7 +3,7 @@
 
 
 resource "aws_security_group" "allow_ssh_terraform" {
-  name        = "allow_sshh" # allow_ssh is already there in my account
+  name        = "allow_sshhh" # allow_ssh is already there in my account
   description = "Allow port number 22 for SSH Access"
 
   # ingress ---> incoming traffic
