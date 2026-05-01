@@ -13,5 +13,5 @@ variable "instance_names" {
 # }
 
 variable "environment" {
-  default = "prod"
+  default = "dev"
 }
