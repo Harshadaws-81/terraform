@@ -1,7 +1,7 @@
 variable "instance_names" {
   type        = list(string)
   default     = ["mysql", "backend", "frontend"]
-  description = "description"
+  description = "var.instance_names[count.index]"
 }
 
 variable "domain_name" {

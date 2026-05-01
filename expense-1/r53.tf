@@ -9,3 +9,5 @@ resource "aws_route53_record" "expense" {
   allow_overwrite = true
 }
 
+# condition is used to create record for frontend instance with public IP and for other instances with private IP.
+

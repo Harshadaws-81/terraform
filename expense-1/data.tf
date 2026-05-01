@@ -16,3 +16,5 @@ data "aws_ami" "ami_info" {
     values = ["hvm"]
   }
 }
+
+# data source.
