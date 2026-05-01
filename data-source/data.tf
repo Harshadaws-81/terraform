@@ -17,3 +17,5 @@ data "aws_ami" "joindevops" {
     values = ["hvm"]
   }
 }
+
+# This data source will fetch the most recent AMI ID for the RHEL-9-DevOps-Practice image.
